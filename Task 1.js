@@ -29,4 +29,7 @@ function analysisArray(arr1) {
   console.log ("null - " + elemnull)
 }
 
-analysisArray(arr)
+analysisArray(arr);
+
+
+// Задание выполнено с одной неточностью. Строчка if (isNaN(+ arr1[i])) { string ++} не учитывает варианты строк, которые содержат цифры, например - "17". Это значение является строкой, но программа распознает его как число. Чтобы проверка работала правильно, лучше использовать в условии typeof: if (typeof arr1[i] == "string") { string ++}
